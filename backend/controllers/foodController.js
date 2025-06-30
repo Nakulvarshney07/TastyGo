@@ -4,6 +4,7 @@ import fs from 'fs'
 import foodModel from '../models/foodModel.js'
 
 //add food item
+// this file is for admin to add food items
 
 const addFood=async(req,res)=>{
     let image_filename=`${req.file.filename}`;
