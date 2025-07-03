@@ -24,8 +24,8 @@ import { useNavigate } from 'react-router-dom'
   const quantity = cartItems?.[item._id] ?? 0;// optional chaining
   if (quantity > 0) {
     return (
-      <div>
-           <div className="cart-items-title cart-items-item" key={index}>
+      <div  key={index}>
+           <div className="cart-items-title cart-items-item">
        <img src={url+"/images/"+item.image} alt="" />
        <p>{item.name}</p>
        <p>${item.price}</p>
