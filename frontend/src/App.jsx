@@ -15,6 +15,7 @@ import Verify from './pages/Verify/Verify'
 import MyOrders from './pages/MyOrders/MyOrders'
 
 
+
 function App() {
   const [showLogin,setShowLogin]=useState(false)
 
@@ -24,6 +25,7 @@ function App() {
   {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
      <div className='app'>
     <Navbar setShowLogin={setShowLogin} />
+    
     <Routes>
       <Route path='/' element={<Home />}></Route>
       
